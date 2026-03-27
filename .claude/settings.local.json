@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find /Users/JK/projects/care-hands/ch_edu/ch_overseas_website/node_modules/next/dist/docs -type f -name *.md)",
+      "Bash(npm install:*)",
+      "Bash(node:*)",
+      "Bash(npm run:*)",
+      "Bash(find /Users/JK/projects/care-hands/ch_edu/ch_overseas_website/public -type f \\\\\\(-iname *.png -o -iname *.jpg -o -iname *.jpeg -o -iname *.gif -o -iname *.webp -o -iname *.svg \\\\\\))"
+    ]
+  }
+}
