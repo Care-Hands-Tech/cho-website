@@ -24,7 +24,7 @@ export function FloatingButtons() {
             exit={{ opacity: 0, scale: 0.5, y: 20 }}
             transition={{ type: "spring", damping: 20, stiffness: 300, delay: 0.1 }}
             href={`tel:${siteConfig.phone}`}
-            className="flex h-12 w-12 items-center justify-center rounded-2xl border border-border/50 bg-card text-primary shadow-lg shadow-black/10 transition-all duration-300 hover:scale-105 hover:shadow-xl"
+            className="flex h-12 w-12 items-center justify-center rounded-2xl border border-white/[0.08] bg-card text-primary shadow-lg shadow-black/20 transition-all duration-300 hover:scale-105 hover:shadow-xl"
             aria-label="Call us"
           >
             <Phone className="h-5 w-5" />

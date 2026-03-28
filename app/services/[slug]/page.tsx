@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { services, getServiceBySlug } from "@/data/services";
 import { serviceImages } from "@/data/images";
-import { BreadcrumbNav } from "@/components/shared/BreadcrumbNav";
 import { PageHero } from "@/components/shared/PageHero";
 import { ServiceContent } from "./ServiceContent";
 
@@ -32,12 +31,6 @@ export default async function ServicePage({
 
   return (
     <>
-      <BreadcrumbNav
-        items={[
-          { label: "Services", href: "/services" },
-          { label: service.title },
-        ]}
-      />
       <PageHero
         title={service.title}
         subtitle={service.shortDescription}

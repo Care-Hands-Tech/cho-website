@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="600" viewBox="0 0 1600 600"><defs><linearGradient id="g" x1="85.35533905932738%" y1="14.644660940672622%" x2="14.64466094067263%" y2="85.35533905932738%"><stop offset="0%" stop-color="#4a3728"/><stop offset="100%" stop-color="#b8860b"/></linearGradient></defs><rect width="1600" height="600" fill="url(#g)"/>
+    <circle cx="1280" cy="120" r="150" fill="white" opacity="0.07"/>
+    <circle cx="240" cy="450" r="120" fill="white" opacity="0.05"/>
+    <circle cx="800" cy="300" r="210" fill="white" opacity="0.04"/>
+  
+    <g transform="translate(800, 210)" fill="white" opacity="0.2">
+      <polygon points="0,-40 60,0 0,15 -60,0"/>
+      <rect x="-3" y="0" width="6" height="35" rx="2"/>
+      <ellipse cx="0" cy="35" rx="15" ry="5"/>
+    </g>
+  <text x="800" y="432" text-anchor="middle" font-family="system-ui,sans-serif" font-size="36" font-weight="600" fill="white" opacity="0.6">Success Stories</text></svg>

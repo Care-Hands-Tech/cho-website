@@ -7,7 +7,6 @@ import { countries, getCountryBySlug } from "@/data/countries";
 import { countryImages } from "@/data/images";
 import { siteConfig } from "@/data/site-config";
 import { Container } from "@/components/shared/Container";
-import { BreadcrumbNav } from "@/components/shared/BreadcrumbNav";
 import { CountryContent } from "./CountryContent";
 
 export function generateStaticParams() {
@@ -41,34 +40,29 @@ export default async function CountryPage({
 
   return (
     <>
-      <BreadcrumbNav
-        items={[
-          { label: "Destinations", href: "/study-destinations" },
-          { label: country.name },
-        ]}
-      />
 
       {/* Hero with country image */}
-      <section className="relative overflow-hidden bg-primary py-24 sm:py-32">
+      <section className="relative overflow-hidden bg-card pt-32 pb-20 sm:pb-24">
         {image && (
           <>
-            <Image src={image} alt={country.name} fill className="object-cover" />
-            <div className="absolute inset-0 bg-primary/65" />
+            <Image src={image} alt={country.name} fill className="object-cover opacity-20" />
+            <div className="absolute inset-0 bg-gradient-to-b from-card/80 to-card" />
           </>
         )}
+        <div className="noise-bg absolute inset-0" />
         <Container className="relative">
           <div className="mx-auto max-w-2xl text-center">
             <span className="mb-4 inline-block text-5xl">{country.flagEmoji}</span>
-            <h1 className="text-3xl font-semibold tracking-tight text-white sm:text-4xl">
+            <h1 className="text-3xl font-bold tracking-tight text-primary sm:text-4xl">
               Study in {country.name}
             </h1>
-            <p className="mt-4 text-sm leading-relaxed text-white/50">
+            <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
               {country.tagline}
             </p>
             <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
               <Link
                 href="/contact"
-                className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-medium text-primary transition-all duration-300 hover:shadow-xl hover:shadow-white/10"
+                className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-accent to-accent-dark px-6 py-3 text-sm font-medium text-white shadow-md shadow-accent/25 transition-all duration-300 hover:shadow-xl hover:shadow-accent/30"
               >
                 Get free counseling
                 <ArrowRight className="h-4 w-4" />

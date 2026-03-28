@@ -3,7 +3,6 @@ import Image from "next/image";
 import { Phone, Mail, MapPin, Clock, MessageCircle } from "lucide-react";
 import { siteConfig } from "@/data/site-config";
 import { Container } from "@/components/shared/Container";
-import { BreadcrumbNav } from "@/components/shared/BreadcrumbNav";
 import { ContactForm } from "./ContactForm";
 
 export const metadata: Metadata = {
@@ -14,22 +13,23 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <>
-      <BreadcrumbNav items={[{ label: "Contact" }]} />
-
       {/* Hero with image */}
-      <section className="relative overflow-hidden bg-primary py-24 sm:py-32">
+      <section className="relative overflow-hidden bg-card pt-32 pb-20 sm:pb-24">
         <Image
-          src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1600&h=600&fit=crop"
+          src="/images/pages/contact.svg"
           alt=""
           fill
-          className="object-cover opacity-15"
+          unoptimized
+          className="object-cover opacity-5"
         />
+        <div className="absolute left-1/2 top-1/2 h-[300px] w-[300px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-accent/[0.08] blur-[80px]" />
+        <div className="noise-bg absolute inset-0" />
         <Container className="relative">
           <div className="mx-auto max-w-2xl text-center">
-            <h1 className="text-3xl font-semibold tracking-tight text-white sm:text-4xl">
+            <h1 className="text-3xl font-bold tracking-tight text-primary sm:text-4xl">
               Let&apos;s plan your future
             </h1>
-            <p className="mt-4 text-sm leading-relaxed text-white/50">
+            <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
               Fill out the enquiry form below or chat with us directly on WhatsApp.
               Our counselors will get back to you within 24 hours.
             </p>

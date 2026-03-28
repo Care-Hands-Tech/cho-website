@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { countries, getCountriesByRegion } from "@/data/countries";
-import { BreadcrumbNav } from "@/components/shared/BreadcrumbNav";
 import { PageHero } from "@/components/shared/PageHero";
 import { DestinationsContent } from "./DestinationsContent";
 
@@ -14,11 +13,10 @@ export default function StudyDestinationsPage() {
 
   return (
     <>
-      <BreadcrumbNav items={[{ label: "Study Destinations" }]} />
       <PageHero
         title="Study destinations"
         subtitle={`${countries.length}+ countries where your dream education awaits.`}
-        image="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=1600&h=600&fit=crop"
+        image="/images/pages/destinations.svg"
       />
       <DestinationsContent byRegion={byRegion} />
     </>

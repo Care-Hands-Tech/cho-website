@@ -93,6 +93,7 @@ export function SuccessStoriesPreview() {
                           src={testimonialImages[i % testimonialImages.length]}
                           alt={t.studentName}
                           fill
+                          unoptimized
                           className="object-cover"
                         />
                       </div>

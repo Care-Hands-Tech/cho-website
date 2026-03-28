@@ -20,30 +20,27 @@ export function DestinationsGrid() {
     .filter(Boolean) as typeof countries;
 
   return (
-    <section className="relative overflow-hidden bg-primary py-32">
-      {/* Noise */}
+    <section className="relative overflow-hidden py-28 sm:py-36">
       <div className="noise-bg absolute inset-0" />
-
-      {/* Gradient orbs */}
-      <div className="absolute right-0 top-0 h-[400px] w-[400px] rounded-full bg-accent/5 blur-[100px]" />
-      <div className="absolute bottom-0 left-0 h-[300px] w-[300px] rounded-full bg-purple-500/5 blur-[80px]" />
+      <div className="absolute right-0 top-0 h-[500px] w-[500px] rounded-full bg-accent/[0.06] blur-[120px]" />
+      <div className="absolute bottom-0 left-0 h-[400px] w-[400px] rounded-full bg-purple-500/[0.05] blur-[100px]" />
 
       <Container className="relative">
         <AnimateIn variant="blurIn">
           <div className="mx-auto max-w-lg text-center">
-            <span className="text-xs font-medium uppercase tracking-widest text-accent-light">
+            <span className="text-xs font-semibold uppercase tracking-[0.2em] text-accent-light">
               Destinations
             </span>
-            <h2 className="mt-3 text-3xl font-semibold tracking-tight text-white sm:text-4xl">
+            <h2 className="mt-4 text-3xl font-bold tracking-tight text-primary sm:text-4xl">
               Study across the globe
             </h2>
-            <p className="mt-4 text-sm text-white/40">
+            <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
               {countries.length}+ countries. Top universities. Clear pathways.
             </p>
           </div>
         </AnimateIn>
 
-        <div className="mt-16 grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
+        <div className="mt-16 grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
           {featured.map((country, i) => {
             const img = countryImages[country.slug];
             return (
@@ -56,7 +53,7 @@ export function DestinationsGrid() {
               >
                 <Link
                   href={`/study-destinations/${country.slug}`}
-                  className="group relative block overflow-hidden rounded-2xl border border-white/[0.06] bg-white/[0.03] transition-all duration-500 hover:border-white/10 hover:bg-white/[0.06]"
+                  className="group relative block overflow-hidden rounded-2xl border border-white/[0.06] bg-card transition-all duration-500 hover:border-accent/20 hover:shadow-2xl hover:shadow-accent/10"
                 >
                   <div className="relative aspect-[4/3] overflow-hidden">
                     {img ? (
@@ -71,9 +68,12 @@ export function DestinationsGrid() {
                         {country.flagEmoji}
                       </div>
                     )}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
-                    <div className="absolute bottom-3 left-3">
-                      <span className="text-sm font-medium text-white">{country.name}</span>
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+                    <div className="absolute bottom-0 left-0 right-0 p-3">
+                      <div className="flex items-center gap-2">
+                        <span className="text-base">{country.flagEmoji}</span>
+                        <span className="text-sm font-semibold text-white">{country.name}</span>
+                      </div>
                     </div>
                   </div>
                 </Link>
@@ -82,10 +82,10 @@ export function DestinationsGrid() {
           })}
         </div>
 
-        <AnimateIn className="mt-12 text-center">
+        <AnimateIn className="mt-14 text-center">
           <Link
             href="/study-destinations"
-            className="group inline-flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-5 py-2.5 text-sm font-medium text-white transition-all duration-300 hover:bg-white/10"
+            className="group inline-flex items-center gap-2.5 rounded-2xl border border-white/[0.08] bg-white/[0.03] px-6 py-3 text-sm font-semibold text-primary backdrop-blur-sm transition-all duration-300 hover:border-white/15 hover:bg-white/[0.06] hover:shadow-lg"
           >
             View all {countries.length}+ destinations
             <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />

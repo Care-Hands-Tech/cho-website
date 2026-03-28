@@ -22,6 +22,7 @@ export function TestimonialCard({
             src={avatar}
             alt={testimonial.studentName}
             fill
+            unoptimized
             className="object-cover"
           />
         </div>

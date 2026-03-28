@@ -21,6 +21,7 @@ export function BlogCard({ post, index = 0 }: { post: BlogPost; index?: number }
           src={image}
           alt={post.title}
           fill
+          unoptimized
           className="object-cover transition-transform duration-700 group-hover:scale-105"
         />
       </div>

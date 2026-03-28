@@ -162,7 +162,7 @@ export function CountryContent({ country }: { country: Country }) {
             <div className="mt-8">
               <Link
                 href="/contact"
-                className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-medium text-primary transition-all duration-300 hover:shadow-xl hover:shadow-white/10"
+                className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-accent to-accent-dark px-6 py-3 text-sm font-medium text-white shadow-md shadow-accent/25 transition-all duration-300 hover:shadow-xl hover:shadow-accent/30"
               >
                 Get free consultation <ArrowRight className="h-4 w-4" />
               </Link>

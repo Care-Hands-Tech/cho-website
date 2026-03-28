@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { blogPosts } from "@/data/blog-posts";
-import { BreadcrumbNav } from "@/components/shared/BreadcrumbNav";
 import { BlogPostContent } from "./BlogPostContent";
 
 export function generateStaticParams() {
@@ -35,12 +34,6 @@ export default async function BlogPostPage({
 
   return (
     <>
-      <BreadcrumbNav
-        items={[
-          { label: "Blog", href: "/blog" },
-          { label: post.title },
-        ]}
-      />
       <BlogPostContent post={post} related={related} />
     </>
   );

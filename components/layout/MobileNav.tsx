@@ -13,7 +13,7 @@ export function MobileNav() {
     <div className="lg:hidden">
       <button
         onClick={() => setOpen(true)}
-        className="flex h-8 w-8 items-center justify-center rounded-lg text-primary hover:bg-black/[0.04]"
+        className="flex h-8 w-8 items-center justify-center rounded-lg text-primary hover:bg-white/[0.05]"
         aria-label="Open menu"
       >
         <Menu className="h-[18px] w-[18px]" />
@@ -26,7 +26,7 @@ export function MobileNav() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              className="fixed inset-0 z-50 bg-black/40 backdrop-blur-sm"
+              className="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm"
               onClick={() => setOpen(false)}
             />
             <motion.div
@@ -34,15 +34,15 @@ export function MobileNav() {
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.95, y: -10 }}
               transition={{ type: "spring", damping: 25, stiffness: 300 }}
-              className="fixed left-4 right-4 top-4 z-50 overflow-hidden rounded-2xl border border-white/20 bg-white/95 p-2 shadow-2xl backdrop-blur-xl"
+              className="fixed left-4 right-4 top-4 z-50 overflow-hidden rounded-2xl border border-white/[0.08] bg-card/95 p-2 shadow-2xl backdrop-blur-xl"
             >
               <div className="flex items-center justify-between p-3">
                 <span className="text-sm font-semibold text-primary">Menu</span>
                 <button
                   onClick={() => setOpen(false)}
-                  className="flex h-8 w-8 items-center justify-center rounded-lg hover:bg-black/[0.04]"
+                  className="flex h-8 w-8 items-center justify-center rounded-lg hover:bg-white/[0.05]"
                 >
-                  <X className="h-4 w-4" />
+                  <X className="h-4 w-4 text-primary" />
                 </button>
               </div>
 
@@ -57,7 +57,7 @@ export function MobileNav() {
                     <Link
                       href={item.href}
                       onClick={() => setOpen(false)}
-                      className="block rounded-xl px-4 py-2.5 text-sm text-muted-foreground transition-colors hover:bg-muted hover:text-primary"
+                      className="block rounded-xl px-4 py-2.5 text-sm text-muted-foreground transition-colors hover:bg-white/[0.05] hover:text-primary"
                     >
                       {item.label}
                     </Link>
@@ -69,7 +69,7 @@ export function MobileNav() {
                 <Link
                   href="/contact"
                   onClick={() => setOpen(false)}
-                  className="block rounded-xl bg-primary py-3 text-center text-sm font-medium text-white"
+                  className="block rounded-xl bg-gradient-to-r from-accent to-accent-dark py-3 text-center text-sm font-medium text-white"
                 >
                   Book Consultation
                 </Link>

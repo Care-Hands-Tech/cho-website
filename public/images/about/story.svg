@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500"><defs><linearGradient id="g" x1="85.35533905932738%" y1="14.644660940672622%" x2="14.64466094067263%" y2="85.35533905932738%"><stop offset="0%" stop-color="#1e3a5f"/><stop offset="100%" stop-color="#4a90d9"/></linearGradient></defs><rect width="800" height="500" fill="url(#g)"/>
+    <circle cx="640" cy="100" r="125" fill="white" opacity="0.07"/>
+    <circle cx="120" cy="375" r="100" fill="white" opacity="0.05"/>
+    <circle cx="400" cy="250" r="175" fill="white" opacity="0.04"/>
+  
+    <g transform="translate(400, 175)" fill="white" opacity="0.2">
+      <polygon points="0,-40 60,0 0,15 -60,0"/>
+      <rect x="-3" y="0" width="6" height="35" rx="2"/>
+      <ellipse cx="0" cy="35" rx="15" ry="5"/>
+    </g>
+  <text x="400" y="360" text-anchor="middle" font-family="system-ui,sans-serif" font-size="30" font-weight="600" fill="white" opacity="0.6">Our Story</text></svg>

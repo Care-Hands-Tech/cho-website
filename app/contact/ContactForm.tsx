@@ -55,7 +55,7 @@ export function ContactForm() {
   }
 
   const inputClass =
-    "w-full rounded-xl bg-muted px-4 py-3 text-sm text-primary outline-none transition-all duration-200 placeholder:text-muted-foreground/50 focus:ring-2 focus:ring-accent/20";
+    "w-full rounded-xl border border-white/[0.06] bg-card px-4 py-3.5 text-sm text-primary outline-none transition-all duration-300 placeholder:text-muted-foreground/50 focus:border-accent/30 focus:ring-1 focus:ring-accent/10";
 
   return (
     <AnimatePresence mode="wait">
@@ -165,7 +165,7 @@ export function ContactForm() {
           <button
             type="submit"
             disabled={isSubmitting}
-            className="flex w-full items-center justify-center gap-2 rounded-xl bg-primary py-3 text-sm font-medium text-white transition-all duration-300 hover:bg-primary-light hover:shadow-lg hover:shadow-primary/15 disabled:pointer-events-none disabled:opacity-40"
+            className="flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-accent to-accent-dark py-3.5 text-sm font-semibold text-white shadow-md shadow-accent/20 transition-all duration-300 hover:shadow-lg hover:shadow-accent/30 disabled:pointer-events-none disabled:opacity-40"
           >
             {isSubmitting ? (
               <Loader2 className="h-4 w-4 animate-spin" />

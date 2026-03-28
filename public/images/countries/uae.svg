@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300"><defs><linearGradient id="g" x1="85.35533905932738%" y1="14.644660940672622%" x2="14.64466094067263%" y2="85.35533905932738%"><stop offset="0%" stop-color="#00732f"/><stop offset="100%" stop-color="#c41e3a"/></linearGradient></defs><rect width="400" height="300" fill="url(#g)"/>
+    <circle cx="340" cy="45" r="90" fill="white" opacity="0.06"/>
+    <circle cx="40" cy="255" r="75" fill="white" opacity="0.05"/>
+  <text x="200" y="126" text-anchor="middle" font-size="66">🇦🇪</text><text x="200" y="216" text-anchor="middle" font-family="system-ui,sans-serif" font-size="27" font-weight="600" fill="white" opacity="0.9">UAE</text></svg>

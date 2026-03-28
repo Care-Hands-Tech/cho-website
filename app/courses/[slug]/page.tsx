@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { courseCategories, getCourseBySlug } from "@/data/courses";
 import { countries } from "@/data/countries";
-import { BreadcrumbNav } from "@/components/shared/BreadcrumbNav";
 import { PageHero } from "@/components/shared/PageHero";
 import { CourseContent } from "./CourseContent";
 
@@ -39,12 +38,6 @@ export default async function CoursePage({
 
   return (
     <>
-      <BreadcrumbNav
-        items={[
-          { label: "Courses", href: "/courses" },
-          { label: course.name },
-        ]}
-      />
       <PageHero
         title={`Study ${course.name} abroad`}
         subtitle={course.description}
