@@ -13,7 +13,16 @@
       "WebFetch(domain:images.unsplash.com)",
       "Bash(python3 -c \"from PIL import Image; print\\('Pillow available'\\)\")",
       "Bash(pip3 install:*)",
-      "Bash(python3:*)"
+      "Bash(python3:*)",
+      "Bash(pkill -f \"next dev\")",
+      "Bash(curl -L -o /Users/JK/projects/care-hands/ch_edu/ch_overseas_website/public/images/hero-students.jpg \"https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&h=1000&fit=crop\")",
+      "Bash(curl -L -H \"User-Agent: Mozilla/5.0\" -o /Users/JK/projects/care-hands/ch_edu/ch_overseas_website/public/images/hero-students.jpg \"https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&h=1000&fit=crop&q=80\")",
+      "Bash(curl -kL -H \"User-Agent: Mozilla/5.0\" -o /Users/JK/projects/care-hands/ch_edu/ch_overseas_website/public/images/hero-students.jpg \"https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&h=1000&fit=crop&q=80\")",
+      "Bash(curl -kL -H \"User-Agent: Mozilla/5.0\" -o /Users/JK/projects/care-hands/ch_edu/ch_overseas_website/public/images/hero-students.jpg \"https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=800&h=1000&fit=crop&q=80\")",
+      "Bash(curl -kL -H \"User-Agent: Mozilla/5.0\" -o /Users/JK/projects/care-hands/ch_edu/ch_overseas_website/public/images/hero-students.jpg \"https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=800&h=1000&fit=crop&q=80\")",
+      "Bash(curl -kL -H \"User-Agent: Mozilla/5.0\" -o /Users/JK/projects/care-hands/ch_edu/ch_overseas_website/public/images/hero-students.jpg \"https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=800&h=1000&fit=crop&q=80\")",
+      "Bash(curl -kL -H \"User-Agent: Mozilla/5.0\" -o /Users/JK/projects/care-hands/ch_edu/ch_overseas_website/public/images/hero-students.jpg \"https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=800&h=1000&fit=crop&q=80\")",
+      "Bash(pkill -9 -f \"next dev\")"
     ]
   }
 }

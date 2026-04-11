@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight, MessageCircle, Sparkles, GraduationCap, Globe, CheckCircle, Users } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 import { siteConfig } from "@/data/site-config";
 
 const words = ["Future", "Career", "Dreams", "Journey"];
@@ -35,7 +36,7 @@ export function HeroBanner() {
       <div className="relative mx-auto flex min-h-[100svh] w-full max-w-7xl items-center px-4 sm:px-6 lg:px-8">
         <div className="grid w-full items-center gap-16 lg:grid-cols-2 lg:gap-20">
           {/* Left — Text */}
-          <div className="pt-28 sm:pt-36 lg:pt-0">
+          <div className="pt-28 sm:pt-36 lg:pt-24">
             <motion.div
               initial={{ opacity: 0, y: 20, filter: "blur(8px)" }}
               animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
@@ -133,36 +134,18 @@ export function HeroBanner() {
             initial={{ opacity: 0, x: 40 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
-            className="relative hidden lg:block"
+            className="relative hidden pt-24 lg:block"
           >
             <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] border border-white/[0.06]">
-              <div className="absolute inset-0 bg-gradient-to-br from-card via-surface to-card" />
-              <div className="noise-bg absolute inset-0" />
-              {/* Globe rings */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="relative">
-                  <div className="h-64 w-64 rounded-full border border-white/[0.05]" />
-                  <div className="absolute inset-4 rounded-full border border-white/[0.05]" />
-                  <div className="absolute inset-8 rounded-full border border-white/[0.05]" />
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <Globe className="h-20 w-20 text-white/[0.07]" />
-                  </div>
-                  <motion.div
-                    animate={{ rotate: 360 }}
-                    transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
-                    className="absolute inset-0"
-                  >
-                    <div className="absolute -top-1.5 left-1/2 h-3 w-3 -translate-x-1/2 rounded-full bg-accent shadow-lg shadow-accent/50" />
-                  </motion.div>
-                  <motion.div
-                    animate={{ rotate: -360 }}
-                    transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-                    className="absolute inset-4"
-                  >
-                    <div className="absolute -right-1.5 top-1/2 h-2.5 w-2.5 -translate-y-1/2 rounded-full bg-purple-400 shadow-lg shadow-purple-400/50" />
-                  </motion.div>
-                </div>
-              </div>
+              <Image
+                src="/images/hero-students.jpg"
+                alt="Students studying abroad"
+                fill
+                sizes="(max-width: 1024px) 0vw, 50vw"
+                className="object-cover"
+                priority
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-background/20 to-transparent" />
               <div className="absolute bottom-0 left-1/2 h-40 w-80 -translate-x-1/2 translate-y-1/2 rounded-full bg-accent/20 blur-[60px]" />
             </div>
 
