@@ -12,9 +12,9 @@ export function Header() {
             <Image
               src="/images/logo.png"
               alt="Care Hands Overseas Education"
-              width={160}
-              height={40}
-              className="h-8 w-auto"
+              width={200}
+              height={50}
+              className="h-10 w-auto brightness-[2] contrast-[1.1]"
               priority
             />
           </Link>

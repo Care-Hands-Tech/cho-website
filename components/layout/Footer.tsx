@@ -27,9 +27,9 @@ export function Footer() {
             <Image
               src="/images/logo.png"
               alt="Care Hands Overseas Education"
-              width={180}
-              height={45}
-              className="h-10 w-auto"
+              width={200}
+              height={50}
+              className="h-10 w-auto brightness-[2] contrast-[1.1]"
             />
             <p className="mt-5 max-w-sm text-sm leading-relaxed text-muted-foreground">
               Trusted guidance for admissions, visas, and global careers.

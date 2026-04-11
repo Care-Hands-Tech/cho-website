@@ -150,7 +150,7 @@ export function CountryContent({ country }: { country: Country }) {
       </section>
 
       {/* CTA */}
-      <section className="bg-primary py-20">
+      <section className="bg-accent-dark py-20">
         <AnimateIn>
           <div className="mx-auto max-w-xl px-4 text-center">
             <h2 className="text-2xl font-semibold text-white">

@@ -10,7 +10,10 @@
       "Bash(grep -r /images/ /Users/JK/projects/care-hands/ch_edu/ch_overseas_website --include=*.tsx --include=*.ts --include=*.jsx --include=*.js ! -path */node_modules/* ! -path */.next/*)",
       "Bash(find /Users/JK/projects/care-hands/ch_edu/ch_overseas_website/components -type f -name *.tsx -o -name *.ts)",
       "Bash(npx next:*)",
-      "WebFetch(domain:images.unsplash.com)"
+      "WebFetch(domain:images.unsplash.com)",
+      "Bash(python3 -c \"from PIL import Image; print\\('Pillow available'\\)\")",
+      "Bash(pip3 install:*)",
+      "Bash(python3:*)"
     ]
   }
 }

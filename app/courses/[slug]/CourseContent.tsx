@@ -108,7 +108,7 @@ export function CourseContent({
       </section>
 
       {/* CTA */}
-      <section className="bg-primary py-20">
+      <section className="bg-accent-dark py-20">
         <AnimateIn>
           <div className="mx-auto max-w-xl px-4 text-center">
             <h2 className="text-2xl font-semibold text-white">
@@ -117,7 +117,7 @@ export function CourseContent({
             <div className="mt-8">
               <Link
                 href="/contact"
-                className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-medium text-primary transition-all duration-300 hover:shadow-xl hover:shadow-white/10"
+                className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-medium text-background transition-all duration-300 hover:shadow-xl hover:shadow-white/10"
               >
                 Book consultation <ArrowRight className="h-4 w-4" />
               </Link>

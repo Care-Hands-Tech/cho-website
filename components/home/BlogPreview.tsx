@@ -66,7 +66,7 @@ export function BlogPreview() {
                     className="object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
-                  <span className="absolute bottom-3 left-3 rounded-lg bg-white/90 px-2.5 py-0.5 text-[11px] font-medium text-primary backdrop-blur-sm">
+                  <span className="absolute bottom-3 left-3 rounded-lg bg-white/90 px-2.5 py-0.5 text-[11px] font-medium text-background backdrop-blur-sm">
                     {categoryLabels[post.category]}
                   </span>
                 </div>

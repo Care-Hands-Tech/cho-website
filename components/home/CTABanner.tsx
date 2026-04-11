@@ -10,19 +10,20 @@ export function CTABanner() {
   return (
     <section className="relative overflow-hidden py-28 sm:py-36">
       {/* Premium gradient mesh */}
-      <div className="absolute inset-0 bg-gradient-to-br from-accent via-purple-600 to-accent-dark animate-gradient" />
+      <div className="absolute inset-0 bg-gradient-to-br from-[#1e1b4b] via-[#312e81] to-[#1e1b4b] animate-gradient" />
+      <div className="absolute inset-0 border-t border-b border-accent/20" />
       <div className="noise-bg absolute inset-0" />
 
       {/* Floating orbs */}
       <motion.div
         animate={{ y: [-20, 20, -20], x: [-10, 10, -10] }}
         transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute left-[10%] top-[20%] h-72 w-72 rounded-full bg-white/[0.08] blur-[60px]"
+        className="absolute left-[10%] top-[20%] h-72 w-72 rounded-full bg-accent/15 blur-[60px]"
       />
       <motion.div
         animate={{ y: [20, -20, 20], x: [10, -10, 10] }}
         transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute bottom-[10%] right-[10%] h-56 w-56 rounded-full bg-white/[0.08] blur-[50px]"
+        className="absolute bottom-[10%] right-[10%] h-56 w-56 rounded-full bg-purple-500/15 blur-[50px]"
       />
 
       <AnimateIn>
@@ -37,7 +38,7 @@ export function CTABanner() {
           <div className="mt-10 flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
             <Link
               href="/contact"
-              className="group inline-flex items-center gap-2.5 rounded-2xl bg-white px-8 py-4 text-sm font-bold text-primary shadow-lg shadow-white/10 transition-all duration-300 hover:scale-[1.02] hover:shadow-xl hover:shadow-white/20"
+              className="group inline-flex items-center gap-2.5 rounded-2xl bg-white px-8 py-4 text-sm font-bold text-background shadow-lg shadow-white/10 transition-all duration-300 hover:scale-[1.02] hover:shadow-xl hover:shadow-white/20"
             >
               Book consultation
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />

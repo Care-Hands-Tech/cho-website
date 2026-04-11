@@ -15,12 +15,12 @@ const values = [
 ];
 
 const team = [
-  { name: "Dr. Sarah Williams", role: "Founder & CEO", img: testimonialImages[0] },
-  { name: "James Mitchell", role: "Head of Admissions", img: testimonialImages[3] },
-  { name: "Priya Kapoor", role: "Visa Specialist", img: testimonialImages[4] },
-  { name: "Michael Chen", role: "Career Counselor", img: testimonialImages[6] },
-  { name: "Fatima Ahmed", role: "Test Prep Director", img: testimonialImages[2] },
-  { name: "David Park", role: "Student Success", img: testimonialImages[9] },
+  { name: "Basil Paul", role: "Founder", img: testimonialImages[0] },
+  { name: "Abhishek Pramod", role: "CEO", img: testimonialImages[3] },
+  { name: "Name", role: "Visa Specialist", img: testimonialImages[4] },
+  { name: "Name", role: "Career Counselor", img: testimonialImages[6] },
+  { name: "Name", role: "Test Prep Director", img: testimonialImages[2] },
+  { name: "Name", role: "Student Success", img: testimonialImages[9] },
 ];
 
 const milestones = [
@@ -95,8 +95,8 @@ export function AboutContent() {
             <h2 className="text-center text-xl font-semibold text-primary">Our team</h2>
           </AnimateIn>
           <StaggerChildren className="mx-auto mt-10 grid max-w-3xl grid-cols-2 gap-8 sm:grid-cols-3">
-            {team.map((m) => (
-              <StaggerItem key={m.name}>
+            {team.map((m, i) => (
+              <StaggerItem key={`${m.name}-${i}`}>
                 <div className="text-center">
                   <div className="relative mx-auto h-20 w-20 overflow-hidden rounded-full">
                     <Image src={m.img} alt={m.name} fill className="object-cover" />
@@ -130,14 +130,14 @@ export function AboutContent() {
       </section>
 
       {/* CTA */}
-      <section className="bg-primary py-20">
+      <section className="bg-accent-dark py-20">
         <AnimateIn>
           <div className="mx-auto max-w-xl px-4 text-center">
             <h2 className="text-2xl font-semibold text-white">Start your journey</h2>
             <div className="mt-8">
               <Link
                 href="/contact"
-                className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-medium text-primary transition-all duration-300 hover:shadow-xl hover:shadow-white/10"
+                className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-medium text-background transition-all duration-300 hover:shadow-xl hover:shadow-white/10"
               >
                 Book consultation <ArrowRight className="h-4 w-4" />
               </Link>

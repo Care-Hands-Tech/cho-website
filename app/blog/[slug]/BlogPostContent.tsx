@@ -73,7 +73,7 @@ export function BlogPostContent({
             </p>
             <Link
               href="/contact"
-              className="mt-4 inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-sm font-medium text-white transition-all duration-300 hover:bg-primary-light"
+              className="mt-4 inline-flex items-center gap-2 rounded-full bg-accent px-5 py-2.5 text-sm font-medium text-white transition-all duration-300 hover:bg-accent-light"
             >
               Book consultation <ArrowRight className="h-3.5 w-3.5" />
             </Link>
