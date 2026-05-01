@@ -82,6 +82,7 @@ export default function ContactPage() {
                   <div>
                     <div className="text-sm font-medium text-primary">Phone</div>
                     <div className="text-xs text-muted-foreground">{siteConfig.phone}</div>
+                    <div className="text-xs text-muted-foreground">{siteConfig.phone2}</div>
                   </div>
                 </a>
 
@@ -103,8 +104,9 @@ export default function ContactPage() {
                     <MapPin className="h-5 w-5 text-accent" />
                   </div>
                   <div>
-                    <div className="text-sm font-medium text-primary">Office</div>
+                    <div className="text-sm font-medium text-primary">Offices</div>
                     <div className="text-xs text-muted-foreground">{siteConfig.address}</div>
+                    <div className="mt-1 text-xs text-muted-foreground">{siteConfig.address2}</div>
                   </div>
                 </div>
 

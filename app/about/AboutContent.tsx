@@ -15,12 +15,9 @@ const values = [
 ];
 
 const team = [
-  { name: "Basil Paul", role: "Founder", img: testimonialImages[0] },
-  { name: "Abhishek Pramod", role: "CEO", img: testimonialImages[3] },
-  { name: "Name", role: "Visa Specialist", img: testimonialImages[4] },
-  { name: "Name", role: "Career Counselor", img: testimonialImages[6] },
-  { name: "Name", role: "Test Prep Director", img: testimonialImages[2] },
-  { name: "Name", role: "Student Success", img: testimonialImages[9] },
+  { name: "Basil Paul", role: "Managing Director", img: testimonialImages[0] },
+  { name: "Joseph PJ", role: "CEO", img: testimonialImages[3] },
+  { name: "Abhishek Pramod", role: "General Manager", img: testimonialImages[4] },
 ];
 
 const milestones = [
@@ -94,7 +91,7 @@ export function AboutContent() {
           <AnimateIn>
             <h2 className="text-center text-xl font-semibold text-primary">Our team</h2>
           </AnimateIn>
-          <StaggerChildren className="mx-auto mt-10 grid max-w-3xl grid-cols-2 gap-8 sm:grid-cols-3">
+          <StaggerChildren className="mx-auto mt-10 grid max-w-3xl grid-cols-1 gap-8 sm:grid-cols-3">
             {team.map((m, i) => (
               <StaggerItem key={`${m.name}-${i}`}>
                 <div className="text-center">

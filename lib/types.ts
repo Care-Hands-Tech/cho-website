@@ -2,16 +2,16 @@ export interface SiteConfig {
   companyName: string;
   tagline: string;
   phone: string;
+  phone2: string;
   whatsapp: string;
   email: string;
   address: string;
+  address2: string;
   mapEmbedUrl: string;
   social: {
     facebook: string;
     instagram: string;
     linkedin: string;
-    youtube: string;
-    tiktok: string;
   };
 }
 

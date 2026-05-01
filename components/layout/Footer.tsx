@@ -14,7 +14,6 @@ const links = [
 const socials = [
   { label: "Instagram", href: siteConfig.social.instagram },
   { label: "LinkedIn", href: siteConfig.social.linkedin },
-  { label: "YouTube", href: siteConfig.social.youtube },
   { label: "Facebook", href: siteConfig.social.facebook },
 ];
 
@@ -36,9 +35,10 @@ export function Footer() {
               Helping students live beyond their limits since 2014.
             </p>
             <div className="mt-6 space-y-2 text-xs text-muted-foreground">
-              <p>{siteConfig.phone}</p>
+              <p>{siteConfig.phone} | {siteConfig.phone2}</p>
               <p>{siteConfig.email}</p>
               <p>{siteConfig.address}</p>
+              <p>{siteConfig.address2}</p>
             </div>
           </div>
 
@@ -88,7 +88,7 @@ export function Footer() {
           <p>&copy; {new Date().getFullYear()} {siteConfig.companyName}</p>
           <div className="flex gap-5">
             <Link href="/privacy" className="transition-colors hover:text-primary">Privacy</Link>
-            <Link href="/terms" className="transition-colors hover:text-primary">Terms</Link>
+            <Link href="/privacy" className="transition-colors hover:text-primary">Terms</Link>
           </div>
         </Container>
       </div>
